@@ -2,7 +2,7 @@
 #include <iostream>
 #include<bits/stdc++.h>
 using namespace std;
-int page_fault(int pages[] , int n , int c)
+int page_fault_FIFO(int pages[] , int n , int c)
 {
     int pagefault=0;
     vector<int> v;
@@ -36,7 +36,7 @@ int main()
     int page[]={7,0,1,2,0,3,0,4,2,3,0,3,2};
     int n=13;
     int memocapacity=4;
-    cout<<page_fault(page,n,memocapacity)<<endl;
+    cout<<page_fault_FIFO(page,n,memocapacity)<<endl;
     
 
     return 0;
